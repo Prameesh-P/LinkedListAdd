@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	l:=LinkidList{}
+	l := LinkidList{}
 	l.add(1)
 	l.add(2)
 	l.add(3)
@@ -25,7 +25,9 @@ type LinkidList struct {
 	head   *node
 	Length int
 }
-//random cmmnt
+
+// random cmmnt
+// random cmmnt2
 func (l *LinkidList) add(value int) {
 	tail := new(node)
 	tail.data = value
@@ -41,9 +43,9 @@ func (l *LinkidList) add(value int) {
 }
 func (l LinkidList) String() string {
 	sb := strings.Builder{}
-	for in:=l.head;in!=nil;in=in.next{
-		sb.WriteString(fmt.Sprintf("%d",in.data))
+	for in := l.head; in != nil; in = in.next {
+		sb.WriteString(fmt.Sprintf("%d", in.data))
 	}
-	
+
 	return sb.String()
 }
