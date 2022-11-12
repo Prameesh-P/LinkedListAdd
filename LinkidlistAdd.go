@@ -26,8 +26,6 @@ type LinkidList struct {
 	Length int
 }
 
-// random cmmnt
-// random cmmnt2
 func (l *LinkidList) add(value int) {
 	tail := new(node)
 	tail.data = value
