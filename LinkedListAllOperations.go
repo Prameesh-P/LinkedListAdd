@@ -37,11 +37,12 @@ func (l *linkidList) add(value int) {
 	tail.data = value
 	if l.head == nil {
 		l.head = tail
-	} else {
+		return
+	} 
 		in := l.head
 		for ; in.next != nil; in = in.next {}
 		in.next=tail
-	}}
+}
 	//string operations
 func (l linkidList) String() string {
 	sb := strings.Builder{}
